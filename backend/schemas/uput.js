@@ -1,0 +1,37 @@
+export default{
+    name:'uput',
+    title:'Uput',
+    type:'document',
+    fields:[{
+        name:'naziv',
+        title:'Naziv',
+        type:'string'
+    },
+    {
+        name:'opis',
+        title:'Opis',
+        type:'string',
+    },
+    {
+        name:'doktor',
+        title:'Doktor',
+        type:'korisnik',
+    },
+    {
+        name:'lekovi',
+        title:'Lekovi',
+        type:'array',
+        of:[{type:'lek'}]
+    },
+    {
+        name:'pacijent',
+        title:'Pacijent',
+        type:'korisnik'
+    },
+    {
+        name:'datum',
+        title:'Datum',
+        type:'string'
+    }
+]
+}
